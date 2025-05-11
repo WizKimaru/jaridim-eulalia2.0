@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-color: transparent;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1550px;
+}
+nav img{
+    height: 106px;
+    width: 106px;
+}
+nav ul{
+    display: flex;
+    gap: 49px;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 auto;
+}
+nav ul li a:hover{
+    color: #337A5B;
+    text-decoration: underline;
+}
+.li_contato{
+    padding: 11px;
+    width: 170px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.li_contato:hover{
+    color: #337A5B;
+    border: 2px solid #337A5B;
+    text-decoration: none;
+}
+main{
+    width: 100%;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fundo_plantas.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home_corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.home_corpo h1{
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 37px;
+}
+.home_corpo p{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 37px;
+}
+.links_home{
+    display: flex;
+    gap: 34px;
+}
+.link_catalogo{
+    color: #ffffff;
+    background-color: #285A43;
+    padding: 11px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.link_catalogo:hover{
+    background-color: #337A5B;
+}
+.link_contato{
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 11px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.link_contato:hover{
+    color: #337A5B;
+    border: 2px solid #337A5B;
+    text-decoration: none;
+}
+
+
+#sobre{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sobre_corpo{
+    display: flex;
+    flex-direction: column;
+}
+.sobre_textos{
+    display: flex;
+    justify-content: space-between;
+}
+.sobre_textos h1{
+    font-family: "Lato", sans-serif;
+    color: #285A43;
+    font-size: 2.5rem;
+    font-weight: 750;
+}
+.sobre_textos p{
+    width: 648px;
+    text-align: justify;
+}
+.sobre_tipos{
+    width: 100%;
+    margin-top: 63px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.sobre_tipos div{
+    width: 350px;
+    height: 390px;
+    text-align: justify;
+    padding: 45px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.24);
+}
+.sobre_tipos h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    color: #285A43;
+    font-weight: 750;
+}
+.plantas_exterior{
+    background-color: #337A5B;
+    color: #fff;
+}
+.plantas_exterior h3{
+    color: #fff;
+}
+
+#catalogo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalogo_corpo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.catalogo_corpo h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 750;
+    color: #285A43;
+}
+.catalogo_opcoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1550px;
+}
+.opcao{
+    width: 280px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.24);
+    overflow: hidden;
+    transition: 0.1s;
+}
+.opcao:hover{
+    transform: scale(1.1);
+}
+.opcao img{
+    width: 280px;
+    height: 250px;
+}
+.planta_preco_contato{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #285A43;
+}
+.planta_preco_contato div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.planta_preco_contato div h4{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.planta_preco_contato div span{
+    font-weight: 550;
+}
+.planta_preco_contato a{
+    color: #ffffff;
+    background-color: #285A43;
+    height: 35px;
+    width: 92px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+.planta_preco_contato a:hover{
+    color: #285A43;
+    background-color: #ffffff;
+    border: 2px solid #285A43;
+}
+
+
+footer{
+    width: 100%;
+    height: 374px;
+    background-color: #285A43;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+.imagens_conteudo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.conteudo_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 36px;
+}
+.conteudo_footer h1{
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    font-weight: 700;
+}
+.conteudo_icones{
+    display: flex;
+    gap: 72px;
+}
+.conteudo_icones img{
+    transition: 0.2s;
+}
+.conteudo_icones img:hover{
+    transform: scale(1.2);
+}
+.links_footer{
+    display: flex;
+    gap: 58px;
+    list-style: none;
+}
+.links_footer li a{
+    color: #fff;
+    text-decoration: none;
+}
+.links_footer li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.links_footer li a:hover{
+    text-decoration: underline;
+}
+footer span{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
