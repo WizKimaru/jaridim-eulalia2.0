@@ -343,3 +343,150 @@ footer span{
     width: 100%;
     text-align: center;
 }
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1344px) {
+    nav ul{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sobre_textos {
+        flex-direction: column;
+        margin-top: 70px;
+        align-items: center;
+        text-align: center;
+        margin-top: 420px;
+    }
+    .sobre_tipos {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .home_corpo h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .sobre_textos p {
+        width: 90%;
+        margin-top: 30px;
+    }
+    #catalogo{
+        margin-top: 290px;
+    }
+    #footer{
+        display: flex;
+        align-items: center;
+    }
+    .conteudo_footer{
+        z-index: 2;
+        position: absolute;
+        margin-top: 40px;
+    }
+    .fern{
+        display: none;
+    }
+}
+@media (max-width: 1135px) {
+    .home_corpo{
+        padding: 50px;
+    }
+    #sobre{
+        margin-top: 150px;
+
+    }
+    #catalogo{
+        margin-top: 500px;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 770px) {
+    #sobre{
+        margin-top: 400px;
+        margin-bottom: 800px;
+        
+    }
+    .home_corpo h1 {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        font-size: 0.9rem;
+    }
+
+    .sobre_textos p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .sobre_tipos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre_tipos div {
+        width: 90%;
+    }
+
+    #catalogo {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 503px) {
+    .home_corpo {
+        padding: 30px 10px;
+    }
+
+    .home_corpo h1 {
+        font-size: 2rem;
+    }
+
+    .sobre_textos {
+        margin-top: 280px;
+        padding: 20px;
+    }
+
+    .sobre_textos p {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .sobre_tipos {
+        gap: 20px;
+    }
+
+    .sobre_tipos div {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        padding: 15px;
+    }
+    .imagens_conteudo{
+        justify-content: center;
+    }
+    .links_footer{
+        gap: 20px;
+    }
+    .monstera_plant {
+        transform: scale(0.6);
+    }
+}
+@media (max-width: 455px) {
+    .links_home{
+        flex-direction: column;
+    }
+    .conteudo_icones{
+        gap: 30px;
+    }
+
+}
