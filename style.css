@@ -361,7 +361,6 @@ footer span{
         margin-top: 70px;
         align-items: center;
         text-align: center;
-        margin-top: 420px;
     }
     .sobre_tipos {
         gap: 40px;
@@ -408,8 +407,8 @@ footer span{
 
 @media (max-width: 770px) {
     #sobre{
-        margin-top: 400px;
-        margin-bottom: 800px;
+        margin-top: 300px;
+        margin-bottom: 500px;
         
     }
     .home_corpo h1 {
@@ -424,16 +423,15 @@ footer span{
         font-size: 1rem;
         line-height: 1.5;
     }
-
+    .sobre_tipos div{
+        padding: 60px;
+        width: 90%;
+        height: 320px;
+    }
     .sobre_tipos {
         flex-direction: column;
         align-items: center;
     }
-
-    .sobre_tipos div {
-        width: 90%;
-    }
-
     #catalogo {
         margin-top: 150px;
     }
@@ -463,8 +461,9 @@ footer span{
     }
 
     .sobre_tipos div {
-        padding: 15px;
+        padding: 50px;
         font-size: 0.95rem;
+        
     }
 
     footer {
