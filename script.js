@@ -1,4 +1,4 @@
-document.querySelectorAll('.carousel').forEach(carousel => {
+ document.querySelectorAll('.carousel').forEach(carousel => {
         const images = carousel.querySelectorAll('img');
         const prevBtn = carousel.querySelector('.prev');
         const nextBtn = carousel.querySelector('.next');
