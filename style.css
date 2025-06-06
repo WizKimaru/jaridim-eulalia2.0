@@ -239,7 +239,7 @@ nav ul li a:hover {
 }
 
 .opcao {
-    width: 280px;
+    width: 300px;
     height: 420px;
     display: flex;
     flex-direction: column;

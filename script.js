@@ -1,3 +1,4 @@
+/*
  document.querySelectorAll('.carousel').forEach(carousel => {
         const images = carousel.querySelectorAll('img');
         const prevBtn = carousel.querySelector('.prev');
@@ -21,3 +22,4 @@
 
         showImage(index);
     });
+*/
