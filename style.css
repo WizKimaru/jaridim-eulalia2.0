@@ -419,7 +419,59 @@ footer span {
     right: 10px;
 }
 
+.frete-banner {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.frete-banner p {
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-banner 10s linear infinite;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+}
+
+@keyframes scroll-banner {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 /* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .frete-banner p {
+        font-size: 1.8rem;
+    }
+    .frete-banner {
+        height: 70px;
+    }
+}
+
+@media (max-width: 500px) {
+    .frete-banner p {
+        font-size: 1.5rem;
+    }
+
+    .frete-banner {
+        height: 60px;
+        padding: 0 10px;
+    }
+}
+
 
 @media (max-width: 1344px) {
     nav ul{
