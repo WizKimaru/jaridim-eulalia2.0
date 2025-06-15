@@ -73,7 +73,11 @@ nav ul li a:hover {
     border: 2px solid #337A5B;
     text-decoration: none;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
 /* Home */
 #home {
     width: 100%;
@@ -149,7 +153,7 @@ nav ul li a:hover {
 /* Sobre */
 #sobre {
     width: 100%;
-    height: 100vh;
+    padding: 80px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,6 +216,37 @@ nav ul li a:hover {
     color: #fff;
 }
 
+#pesquisa{
+    width: 100%;
+    height: 190px;
+    background-image: url(images/fundobarrapesquisa.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.pesquisa_corpo{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.pesquisa_corpo h4{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: "Lato", sans-serif;
+}
+.pesquisa_corpo div input{
+    width: 475px;
+    height: 48px;
+    border-radius: 12px;
+    padding-left: 20px;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white; 
+}
 /* Catálogo */
 #catalogo {
     width: 100%;
@@ -312,7 +347,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
 }
 
 .imagens_conteudo {
@@ -452,6 +486,32 @@ footer span {
 
 /* RESPONSIVIDADE */
 
+@media (max-width: 868px) {
+    #pesquisa {
+        height: auto;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .pesquisa_corpo {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pesquisa_corpo h4 {
+        font-size: 1.8rem;
+    }
+
+    .pesquisa_corpo div input {
+        
+        width: 350px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
+
+
 @media (max-width: 768px) {
     .frete-banner p {
         font-size: 1.8rem;
@@ -474,6 +534,9 @@ footer span {
 
 
 @media (max-width: 1344px) {
+    main{
+        gap: 00px;
+    }
     nav ul{
         display: none;
     }
@@ -484,26 +547,24 @@ footer span {
     }
     .sobre_textos {
         flex-direction: column;
-        margin-top: 70px;
         align-items: center;
         text-align: center;
     }
     .sobre_tipos {
         gap: 40px;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .home_corpo h1 {
         font-size: 3rem;
         text-align: center;
     }
-
     .sobre_textos p {
         width: 90%;
         margin-top: 30px;
     }
-    #catalogo{
+    /*#catalogo{
         margin-top: 290px;
-    }
+    }*/
     #footer{
         display: flex;
         align-items: center;
@@ -511,7 +572,7 @@ footer span {
     .conteudo_footer{
         z-index: 2;
         position: absolute;
-        margin-top: 40px;
+        /*margin-top: 40px;*/
     }
     .fern{
         display: none;
@@ -521,22 +582,26 @@ footer span {
     .home_corpo{
         padding: 50px;
     }
+    /*
     #sobre{
         margin-top: 150px;
 
     }
+    */
     #catalogo{
-        margin-top: 500px;
+        /*margin-top: 500px;*/
         padding: 50px;
     }
 }
 
 @media (max-width: 770px) {
+    /*
     #sobre{
         margin-top: 300px;
         margin-bottom: 500px;
         
     }
+    */
     .home_corpo h1 {
         font-size: 3rem;
     }
@@ -558,9 +623,11 @@ footer span {
         flex-direction: column;
         align-items: center;
     }
+    /*
     #catalogo {
-        margin-top: 150px;
+        margin-top: 200px;
     }
+    */
 }
 
 @media (max-width: 503px) {
@@ -573,9 +640,10 @@ footer span {
     }
 
     .sobre_textos {
-        margin-top: 280px;
+        margin-top: 60px;
         padding: 20px;
     }
+
 
     .sobre_textos p {
         width: 100%;
