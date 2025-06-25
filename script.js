@@ -1,28 +1,35 @@
-/*
- document.querySelectorAll('.carousel').forEach(carousel => {
-        const images = carousel.querySelectorAll('img');
-        const prevBtn = carousel.querySelector('.prev');
-        const nextBtn = carousel.querySelector('.next');
-        let index = 0;
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const elements = carousel.querySelectorAll('img, video');
+    const prevBtn = carousel.querySelector('.prev');
+    const nextBtn = carousel.querySelector('.next');
+    let index = 0;
 
-        function showImage(idx) {
-            images.forEach(img => img.classList.remove('active'));
-            images[idx].classList.add('active');
-        }
-
-        prevBtn.addEventListener('click', () => {
-            index = (index - 1 + images.length) % images.length;
-            showImage(index);
+    function showElement(idx) {
+        elements.forEach(el => {
+            el.classList.remove('active');
+            if (el.tagName === 'VIDEO') {
+                el.pause();
+                el.currentTime = 0;
+            }
+            el.style.display = 'none';
         });
+        elements[idx].classList.add('active');
+        elements[idx].style.display = 'block';
+    }
 
-        nextBtn.addEventListener('click', () => {
-            index = (index + 1) % images.length;
-            showImage(index);
-        });
-
-        showImage(index);
+    prevBtn.addEventListener('click', () => {
+        index = (index - 1 + elements.length) % elements.length;
+        showElement(index);
     });
-*/
+
+    nextBtn.addEventListener('click', () => {
+        index = (index + 1) % elements.length;
+        showElement(index);
+    });
+
+    showElement(index);
+});
+
 
 // Efeito de destaque ao passar o mouse sobre a faixa
 const banner = document.querySelector('.frete-banner');
@@ -74,3 +81,4 @@ inputBusca.addEventListener('input', () => {
         }
     });
 });
+
